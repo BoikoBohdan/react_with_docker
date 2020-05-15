@@ -19,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "codeclimate:install": "./scripts/codeclimate.install.sh",
+    "codeclimate:analyze": "codeclimate analyze -f html > reports/$(date +%Y-%m-%d).html ./src"
   },
   "eslintConfig": {
     "extends": "react-app"
